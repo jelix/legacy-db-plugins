@@ -1,6 +1,6 @@
 {
     "name": "jelix/legacy-db-plugins",
-    "type": "library",
+    "type": "jelix-module",
     "description": "Legacy database plugins for Jelix",
     "keywords": ["framework"],
     "homepage": "http://jelix.org",
@@ -20,5 +20,10 @@
     },
     "replace": {
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "jelix": {
+            "plugins-dir" : "."
+        }
+    }
 }

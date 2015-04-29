@@ -10,13 +10,13 @@ Available plugins:
 
 To install them:
 
-- use Composer (jelix/legacy-db-plugins) or extract them the archive somewhere
-- in the mainconfig.ini.php file of your Jelix application, add the path to the legacy-db-plugins
-  into the pluginsPath parameter. Example:
-
-```ini
-pluginsPath=<some existing path>,app:vendor/jelix/legacy-db-plugins
-```
+- use Composer (jelix/legacy-db-plugins)
+- or extract them from the archive you download somewhere, and declare the legacy-db-plugin
+  as plugins dir into your application.init.php :
+  
+  ```php
+  jApp::declarePluginsDir(__DIR__.'/../path/to/legacy-db-plugin');
+  ```
 
 Then you can indicate "sqlite" or "mysql" as 'driver' in the profils.ini.php file.
 
