@@ -20,10 +20,13 @@
     },
     "replace": {
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "extra": {
         "jelix": {
             "plugins-dir" : "."
+        },
+        "branch-alias": {
+            "dev-master": "1.7.x-dev"
         }
     }
 }
